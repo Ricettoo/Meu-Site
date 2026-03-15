@@ -3,21 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Ricetto | Dev</title>
+    <title>Gabriel Ricetto | Dev & Security</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #121212; color: white; text-align: center; }
-        h1 { color: #0070f3; }
-        .links a { color: #ccc; margin: 0 10px; text-decoration: none; border: 1px solid #444; padding: 5px 10px; border-radius: 5px; }
+        :root {
+            --bg: #0a0a0c;
+            --card-bg: #111114;
+            --accent: #00ff41; /* Verde Terminal */
+            --text: #e1e1e6;
+            --secondary: #8257e5; /* Roxo para Blockchain */
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Fira Code', monospace;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container { max-width: 800px; width: 100%; }
+
+        header { text-align: center; margin-bottom: 40px; }
+        h1 { color: var(--accent); font-size: 2.2rem; margin-bottom: 10px; }
+        .subtitle { opacity: 0.8; font-size: 1rem; color: var(--secondary); }
+
+        .links { display: flex; gap: 15px; justify-content: center; margin-top: 20px; }
+        .links a { 
+            color: var(--text); 
+            text-decoration: none; 
+            border: 1px solid #333; 
+            padding: 8px 16px; 
+            border-radius: 6px; 
+            display: flex; 
+            align-items: center; 
+            gap: 8px;
+            transition: 0.3s;
+        }
+        .links a:hover { border-color: var(--accent); background: #1a1a1e; }
+
+        .section-title { 
+            border-bottom: 1px solid #333; 
+            padding-bottom: 10px; 
+            margin-top: 40px; 
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid #232326;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            background: #29292e;
+            color: var(--accent);
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        footer { margin-top: 60px; font-size: 0.8rem; opacity: 0.5; }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Gabriel Ricetto</h1>
-        <p>Estudante de Ciência da Computação | CyberSegurança e Redes</p>
-        <div class="links">
-            <a href="https://github.com/Ricettoo">GitHub</a>
-            <a href="https://www.linkedin.com/in/ricettoo/">LinkedIn</a>
-        </div>
-    </div>
-</body>
-</html>
+
+    <div class="container">
+        <header>
+            <h1>> gabriel_ricetto</h1>
+            <p class="subtitle">Computer Science Student @ UNESPAR</p>
+            
+            <div class="links">
+                <a href="https://github.com/Ricettoo"><i data-lucide="github"></i> GitHub</a>
